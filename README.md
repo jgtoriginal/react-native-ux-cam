@@ -19,16 +19,11 @@ npm install --save react-native-ux-cam
 
 ### iOS with react-native and Cocoapods
 
-Run the following:
-
-```bash
-react-native link react-native-ux-cam
-```
-
-Then, add the following to your Podfile:
+Add the following to your Podfile:
 
 ```ruby
 pod "UXCam", "~> 2.5.8"
+pod 'react-native-ux-cam', path: "react-native-ux-cam"
 ```
 
 Then run:
@@ -37,26 +32,34 @@ Then run:
 pod install
 ```
 
-You're done! :tada:
-
 ### Android
 
-Run the following:
+1.
+Go to `android/settings.gradle`
+add `include ':react-native-ux-cam'`
+and on the following line add `project(':react-native-ux-cam').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ux-cam/android')` 
 
-```bash
-react-native link react-native-ux-cam
-```
+2.
+Go to `android/app/build.gradle`
+add `compile project(':react-native-ux-cam')` under dependencies
 
-Then add the following to your file `android/app/build.gradle` (or add the maven url to your existing repositories section):
+3.
+Go to `android/app/src/main/java/com/terravion/dbug/MainApplication.java`
+add `import com.rnuxcam.rnuxcam.UXCamPackage;`
+and `new UXCamPackage(),`
+
+4.
+Add the following to your file `android/app/build.gradle` (or add the maven url to your existing repositories section):
 
 ```gradle
-repositories {
-    maven {
-        url 'http://sdk.uxcam.com/android'
-    }
+allprojects {
+    // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+    maven { url "$rootDir/../node_modules/react-native/android" }
+    maven { url "http://sdk.uxcam.com/android/" }
 }
 ```
 
+5.
 And add this to your file `android/app/src/main/AndroidManifest.xml`, inside your `<application>` tag:
 
 ```xml
