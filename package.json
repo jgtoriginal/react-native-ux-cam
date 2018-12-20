@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "react-native-ux-cam@3.5.0",
+      "/Users/jgt/Documents/Projects/overview-app"
+    ]
+  ],
+  "_from": "react-native-ux-cam@3.5.0",
+  "_id": "react-native-ux-cam@3.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YrgBWX61us7txLKbPIdmIGA1BXL7qbvQrZk/s5U+Pct50bF9p3vL2ihOUST/hQjhcwFUSA6Jx2NxbiDzn9j5aQ==",
+  "_location": "/react-native-ux-cam",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-ux-cam@3.5.0",
+    "name": "react-native-ux-cam",
+    "escapedName": "react-native-ux-cam",
+    "rawSpec": "3.5.0",
+    "saveSpec": null,
+    "fetchSpec": "3.5.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-ux-cam/-/react-native-ux-cam-3.5.0.tgz",
+  "_spec": "3.5.0",
+  "_where": "/Users/jgt/Documents/Projects/overview-app",
+  "author": {
+    "name": "Mark Miyashita",
+    "email": "negativetwelve@gmail.com",
+    "url": "https://github.com/negativetwelve"
+  },
+  "bugs": {
+    "url": "https://github.com/negativetwelve/react-native-ux-cam/issues"
+  },
+  "contributors": [
+    {
+      "name": "Mark Miyashita",
+      "email": "negativetwelve@gmail.com"
+    }
+  ],
+  "description": "React Native wrapper for uxcam.com.",
+  "devDependencies": {
+    "eslint-config-jolt": "^1.0.2",
+    "jest-preset-jolt": "^1.0.1"
+  },
+  "engines": {},
+  "eslintConfig": {
+    "extends": "jolt"
+  },
+  "files": [
+    "android",
+    "ios",
+    "js",
+    "react-native-ux-cam.podspec"
+  ],
+  "homepage": "https://github.com/negativetwelve/react-native-ux-cam",
+  "jest": {
+    "preset": "jest-preset-jolt",
+    "testPathIgnorePatterns": [
+      "<rootDir>/examples",
+      "<rootDir>/node_modules"
+    ]
+  },
+  "keywords": [
+    "android",
+    "ios",
+    "jolt",
+    "react-native",
+    "user-sessions",
+    "ux",
+    "uxcam",
+    "ux-cam"
+  ],
+  "license": "MIT",
+  "main": "./js/UXCam.js",
+  "name": "react-native-ux-cam",
+  "repository": {
+    "url": "git+https://github.com/negativetwelve/react-native-ux-cam.git",
+    "type": "git"
+  },
+  "scripts": {
+    "lint": "eslint js",
+    "setup": "yarn install && yarn bootstrap",
+    "test": "jest"
+  },
+  "version": "3.5.0"
+}

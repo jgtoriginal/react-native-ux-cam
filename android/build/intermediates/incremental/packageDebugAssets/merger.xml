@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/jgt/Documents/Projects/overview-app/node_modules/react-native-ux-cam/android/src/main/assets"/><source path="/Users/jgt/Documents/Projects/overview-app/node_modules/react-native-ux-cam/android/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/jgt/Documents/Projects/overview-app/node_modules/react-native-ux-cam/android/src/debug/assets"/></dataSet></merger>
