@@ -10,8 +10,8 @@
 // #import <React/RCTUIManager.h>
 // #endif
 
-#import <React/RCTBridgeModule.h>
-#import <React/RCTUIManager.h>
+#import "RCTBridgeModule.h"
+#import "RCTUIManager.h"
 @interface RNUxcam : NSObject <RCTBridgeModule>
 
 @end
