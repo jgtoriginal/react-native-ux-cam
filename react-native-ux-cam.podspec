@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors = package[:contributors].flat_map { |author| { author[:name] => author[:email] } }
   s.summary = package[:description]
   s.source = { git: package[:repository][:url] }
-  s.source_files = "ios/*.{h,m}"
+  s.source_files = "ios/*.{a,h,m}"
   s.platform = :ios, "8.0"
 
   s.dependency "UXCam", "~> 2.5.8"

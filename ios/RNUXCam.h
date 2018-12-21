@@ -1,14 +1,18 @@
-//
-//  RNUXCam.h
-//  RNUXCam
-//
-//  Created by Mark Miyashita on 10/22/16.
-//  Copyright © 2016 Mark Miyashita. All rights reserved.
-//
 
+// #if __has_include("RCTBridgeModule.h")
+// #import "RCTBridgeModule.h"
+// #else
+// #import <React/RCTBridgeModule.h>
+// #endif
+// #if __has_include("RCTUIManager.h")
+// #import "RCTUIManager.h"
+// #else
+// #import <React/RCTUIManager.h>
+// #endif
 
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
+#import <React/RCTUIManager.h>
+@interface RNUxcam : NSObject <RCTBridgeModule>
 
-
-@interface RNUXCam : NSObject <RCTBridgeModule>
 @end
+  
